@@ -1,0 +1,69 @@
+.projects-menu {
+    display: flex;
+    flex-direction: column; /* Arrange the containers in a column layout */
+    align-items: center; /* Center the content horizontally */
+    padding: 0;
+}
+
+.project-container {
+    width: 100%; /* Set the width of the containers */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0; /* Add some margin between the containers */
+    background-image: url('./project-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center center;
+}
+
+
+.project {
+    width: 18%;
+    height: 400px; /* Set the height as a percentage of the parent container */
+    max-height: 400px; /* Set a maximum height for responsiveness */
+    display: flex;
+    margin: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.6); /* Apply a transparent background */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    transform: scale(1);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth transition effects */
+    color: maroon;
+    font-size: 18px;
+
+}
+
+.project:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background color on hover */
+    transform: scale(1.1); /* Scale up the element on hover */
+    cursor: pointer;
+    color: green;
+    font-size: 20px;
+}
+
+.projects-header {
+    background-color: grey; /* Set your desired background color */
+    color: darkred; /* Set your desired text color */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.proj1 {
+    font-size: 18px; /* Increased font size of the text on tabs */
+    text-decoration: none;
+    color: maroon;
+}

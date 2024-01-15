@@ -1,0 +1,54 @@
+body {
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslategrey;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  flex: 1; /* This makes the logo take up the available space on the left */
+  max-width: 150px; /* Set a maximum width for the logo */
+}
+
+.logo {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  margin-right: 30px; /* Increased space between each tab */
+  cursor: pointer;
+  font-size: 18px; /* Increased font size of the text on tabs */
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+.tab:hover {
+  color: olive; /* Change color on hover */
+}
+.heading {
+  flex: 1; /* Takes up remaining space in the center */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove default margin */
+}
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column; /* Display tabs vertically */
+    margin-top: 10px; /* Add some space between tabs */
+  }
+
+  .tab {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add margin between vertically stacked tabs */
+  }
+}
